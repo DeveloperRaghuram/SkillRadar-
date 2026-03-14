@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillRadar | AI Career Growth</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --dark: #1e293b;
+            --light-text: #64748b;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 800px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Subtle background decoration */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(248, 250, 252, 0) 70%);
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1e293b 0%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: var(--light-text);
+            max-width: 550px;
+            margin: 0 auto 25px auto;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        button {
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+        }
+
+        button:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.6;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="footer-text">Launching 2026</div>
+    <h1>SkillRadar</h1>
+
+    <p>
+        Build <span class="highlight">ATS-optimized</span> resumes, discover in-demand skills, 
+        and track job applications with precision AI.
+    </p>
+
+    <p style="font-size: 17px;">
+        Join the early access waitlist and be among the first
+to test the platform.
+    </p>
+
+    <a href="https://forms.gle/D9iB7WcXzL2vZ86a8">
+        <button>Claim Your Early Access</button>
+    </a>
+</div>
+
+</body>
+</html>
